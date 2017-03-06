@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "21.0.0"
+    defaultConfig {
+        applicationId "com.smid.app"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 17
+        versionName "1.6.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.yalantis:contextmenu:1.0.7'
+    compile 'com.twofortyfouram:android-plugin-client-sdk-for-locale:[4.0.2, 5.0['
+}

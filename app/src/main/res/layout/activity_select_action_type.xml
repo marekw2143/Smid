@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.smid.app.smid.SelectActionType"
+android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+
+    <!--phone-->
+    <Button
+        style="@style/SelectActionType_Button"
+        android:id="@+id/btnActionTypePhone"
+        android:onClick="ActionTypeClick"
+        android:text="@string/ActionType_Phone"
+        />
+
+    <TextView style="@style/SelectActionType_Description"
+        android:text="@string/ActionType_Phone_Descrition" />
+
+    <!--sms-->
+    <Button
+        style="@style/SelectActionType_Button"
+        android:id="@+id/btnActionTypeSMS"
+        android:text="@string/ActionType_SMS"
+        />
+
+    <TextView
+        style="@style/SelectActionType_Description"
+        android:text="@string/ActionType_SMS_Descrition" />
+
+    <Button
+        style="@style/SelectActionType_Button"
+        android:text="@string/ActionType_PlayMusic" />
+
+        <TextView
+            style="@style/SelectActionType_Description"
+               android:text="@string/ActionType_PlayMusic_Description" />
+</LinearLayout>

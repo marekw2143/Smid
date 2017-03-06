@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/DefaultButton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:labelTextSize">8pt</item>
+    </style>
+    <style name="AppName">
+        <item name="android:textColor">#0000e1</item>
+        <item name="android:textSize">12pt</item>
+        </style>
+
+    <style name="ObjectDetailsLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="GestureRegistering_Information">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10pt</item>
+    </style>
+
+    <style name="ObjectDetailsValue" parent="ObjectDetailsLabel">
+        <item name="android:textSize">12pt</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <style name="ObjectDetailsButton"></style>
+
+    <style name="SelectActionType_Description" parent="ObjectDetailsValue">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SelectActionType_Button" parent="SelectActionType_Description"></style>
+
+    <style name="ToolbarStyle">
+        <item name="android:layout_height">50pt</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#19d9b7</item>
+    </style>
+
+    <style name="GestureDetailsSpace">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10pt</item>
+    </style>
+
+
+    <style name="GestureDetailsSpaceHorizontal">
+        <item name="android:layout_width">30pt</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="GestureRegistering_StatusLabel" parent="SelectActionType_Description">
+        <item name="android:textSize">16pt</item>
+        <item name="android:layout_gravity">left</item>
+
+    </style>
+
+    <style name="GestureRegistering_StatusValue" parent="SelectActionType_Description">
+        <item name="android:textSize">16pt</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="GestureRegistering_Space">
+        <item name="android:layout_height">30pt</item>
+    </style>
+
+    <style name="GestureDetails_ValueLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="GestureDetection_Status">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DefaultButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <style name="MainLayout" parent="Widget.Design.CoordinatorLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+
+    <style name="ContentListLayout" parent="Widget.Design.CoordinatorLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ContentSimpleLayout" parent="Widget.Design.CoordinatorLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
+

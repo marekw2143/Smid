@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<SwitchPreference-->
+        <!--android:defaultValue="true"-->
+        <!--android:key="show_help_at_top"-->
+        <!--android:summary="@string/perf_description_show_help_texts"-->
+        <!--android:title="@string/perf_title_show_help_texts"-->
+        <!--/>-->
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_gesture_detection_play_sound"
+        android:summary="@string/pref_description_play_sound"
+        android:title="@string/pref_title_play_sound"
+        />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_gesture_detection_show_image"
+        android:summary="@string/pref_description_show_image"
+        android:title="@string/pref_title_show_image"
+        />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="pref_work_as_tasker_plugin"
+        android:summary="@string/pref_description_work_as_tasker_plugin"
+        android:title="@string/pref_title_work_as_tasker_plugin"
+        />
+</PreferenceScreen>

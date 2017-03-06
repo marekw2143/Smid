@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/MainLayout">
+
+    <include layout="@layout/toolbar"/>
+
+<LinearLayout style="@style/ContentListLayout">
+    <ListView
+        android:id="@+id/ActionListView"
+        style="@style/ListViewStyle" />
+
+    <Button
+        style="@style/DefaultButton"
+        android:text="@string/ActionList_AddNewAction"
+        android:id="@+id/BtnAddNewAction"
+        android:onClick="onClick"/>
+
+</LinearLayout>
+</LinearLayout>

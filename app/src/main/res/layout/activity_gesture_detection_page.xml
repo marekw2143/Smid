@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.smid.app.GestureDetectionPage"
+    style="@style/MainLayout"
+    android:id="@+id/GestureDetection_MainLayout">
+
+    <include layout="@layout/toolbar"/>
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/my_toolbar"-->
+            <!--style="@style/ToolbarStyle"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MainActivity_TestingAccelerometer"
+            android:id="@+id/MainActivity_InfoTesting"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            style="@style/ContentSimpleLayout"
+            android:id="@+id/GestureDetection_MainContentLayout"
+            android:visibility="gone"
+            >
+
+            <TextView
+                style="@style/GestureRegistering_Information"
+                android:id="@+id/GestureDetection_TV_Description"
+                android:text="@string/gestureRegistering_Information"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GestureDetection_StatusLayout">
+
+                <TextView
+                    style="@style/GestureRegistering_Information"
+                    android:layout_gravity="center_vertical"
+                    android:text="Status: "/>
+
+                <TextView
+                    style="@style/GestureRegistering_Information"
+                    android:id="@+id/GestureDetection_TV_Status"
+                    android:text="status"
+                    android:layout_gravity="center_vertical">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/kolko_2"
+                    android:id="@+id/GestureDetection_Kolko"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+                <TextView
+                    style="@style/GestureRegistering_Information"
+                    android:id="@+id/GestureDetection_NowYouCanMakeGesture"
+                    android:text="@string/GestureDetection_NowYouCanMakeAGesture"
+                    android:visibility="gone"/>
+
+            <TextView
+                style="@style/GestureRegistering_Information"
+                android:id="@+id/GestureDetection_GestureDetectionComplete"
+                android:text="@string/gestureRegistering_GestureDetectionComplete"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GestureDetection_NoGestureDetected"
+                android:text="@string/GestureDetection_GestureDetection_NoGestureDetected"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/GestureDetection_DetectedGesture"
+                android:id="@+id/GestureDetection_DetectedGesture"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/GestureDetection_GestureRepresentationLayout"></LinearLayout>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/GestureDetection_SuchGestureIsNotSaved"
+                android:id="@+id/GestureDetection_SuchGestureIsNotSaved"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCreateNewGesture"
+                android:onClick="onClick"
+                android:text="@string/GestureDetection_CreateNewGesture"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GestureDetection_ReplayDetection"
+                android:onClick="onClick"
+                android:text="@string/GestureDetection_DetectOnceMore"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ActionDetails_MainLayout">
+
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ContentSimpleLayout"
+        android:id="@+id/ActionDetails_MainGrid"
+        >
+
+        <TextView android:id="@+id/ActionDetails_ActionName"
+            android:layout_row="0"
+            android:layout_column="0"
+            style="@style/ObjectDetailsLabel"
+            android:text="@string/ActionName_Label" />
+        <LinearLayout
+            style="@style/GestureDetails_ValueLayout"
+            android:id="@+id/ActionName_Layout">
+            <Space style="@style/GestureDetailsSpaceHorizontal"></Space>
+            <TextView
+                style="@style/ObjectDetailsValue"
+                android:id="@+id/ActionName_Value"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Delete"
+            style="@style/ObjectDetailsButton"
+
+
+            android:id="@+id/ActionDelete"
+            android:onClick="onClick"
+            />
+
+        <Button
+            style="@style/DefaultButton"
+            android:text="@string/SelectActionExternalSource_GoToMainMenu"
+            android:onClick="onClick"
+            android:id="@+id/ActionDetails_BtnMainMenu"/>
+    </LinearLayout>
+</LinearLayout>

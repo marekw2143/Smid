@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GestureName_MainLayout">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ContentSimpleLayout"
+
+    android:id="@+id/GestureDetailsView"
+    >
+
+        <TextView android:id="@+id/GestureName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ObjectDetailsLabel"
+            android:text="@string/GestureName" />
+        <LinearLayout
+            style="@style/GestureDetails_ValueLayout"
+            android:id="@+id/GestureDetails_GestureNameLayout">
+            <Space style="@style/GestureDetailsSpaceHorizontal"></Space>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ObjectDetailsValue"
+            android:id="@+id/GestureNameValue"
+            android:text="some"
+            />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ObjectDetailsValue"
+            android:id="@+id/GestureNameValue_EditText"
+            android:visibility="gone"
+            />
+            </LinearLayout>
+        <LinearLayout
+            style="@style/GestureDetails_ValueLayout"
+            android:id="@+id/GestureDetails_GestureNameButtons">
+            <Space style="@style/GestureDetailsSpaceHorizontal"></Space>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/GestureDetails_NameLayout"
+            android:orientation="horizontal"
+
+        >
+
+
+            <Button
+                android:id="@+id/GestureDetails_BtnChangeName"
+                style="@style/ObjectDetailsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:onClick="onClick"
+                android:text="@string/Gesture_BtnChangeName"/>
+
+            <Button
+                android:id="@+id/GestureDetails_BtnConfirmChangeName"
+                style="@style/ObjectDetailsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:onClick="onClick"
+                android:visibility="gone"
+                android:text="@string/Gesture_BtnConfirmChangeName"/>
+
+            <Button
+                android:id="@+id/GestureDetails_BtnCancelChangeName"
+                style="@style/ObjectDetailsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_gravity="right"
+                android:onClick="onClick"
+                android:visibility="gone"
+                android:text="@string/Gesture_BtnCancelChangeName"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space style="@style/GestureDetailsSpace" />
+
+
+        <TextView android:text="@string/GestureAssociatedAction"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ObjectDetailsLabel"
+            />
+
+        <LinearLayout
+            style="@style/GestureDetails_ValueLayout"
+            android:id="@+id/GestureDetails_ActionNameLayout">
+
+            <Space style="@style/GestureDetailsSpaceHorizontal" />
+
+            <TextView android:id="@+id/GestureActionAssociationValue"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@style/ObjectDetailsValue"
+                android:text="[Test Value]"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space style="@style/GestureDetailsSpaceHorizontal" />
+
+            <Button
+                android:id="@+id/GestureDetails_BtnChangeAction"
+                style="@style/ObjectDetailsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom"
+                android:onClick="onClick"
+                android:text="@string/Gesture_BtnChangeAction"/>
+        </LinearLayout>
+
+
+        <Space style="@style/GestureDetailsSpace" />
+
+        <TextView android:id="@+id/Gesture_Move_Label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/ObjectDetailsLabel"
+            android:layout_column="0"
+            android:text="@string/Gesture_Move_Label"
+            android:layout_row="6"/>
+
+       <LinearLayout android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/GestureDetails_GestureMoveLayout"
+           android:orientation="horizontal">
+
+
+       </LinearLayout>
+        <Space style="@style/GestureDetailsSpace" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/GestureDetails_Delete"
+        style="@style/ObjectDetailsButton"
+        android:id="@+id/GestureDelete"
+        android:onClick="onClick"
+       />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/GestureDetails_BackToMainMenu"
+            style="@style/ObjectDetailsButton"
+            android:id="@+id/GestureBackToMainMenu"
+            android:onClick="onClick"
+            android:layout_gravity="bottom"
+            />
+
+
+
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

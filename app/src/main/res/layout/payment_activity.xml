@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/MainActivity_MainLayout"
+    style="@style/MainLayout"
+    tools:context="com.smid.app.payments.PaymentActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/Payment_Info"
+        style="@style/ObjectDetailsLabel"
+        android:text="@string/Payment_WaitInfo"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/ContentSimpleLayout"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.smid.app.GestureDetectorMainMenu"
+        android:id="@+id/MainActivity_ContentLayout"
+        android:visibility="gone"
+        android:textAlignment="center">
+
+        <Button
+            style="@style/DefaultButton"
+            android:text="@string/Payment_ButtonBuy"
+            android:onClick="onClick"
+            android:id="@+id/Payment_BtnBuy"/>
+
+    </LinearLayout>
+
+</LinearLayout>

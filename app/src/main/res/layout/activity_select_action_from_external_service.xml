@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/MainLayout"
+    android:id="@+id/SelectAction_MainLayout">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        style="@style/ContentListLayout"
+        android:id="@+id/SelectAction_ContentLayout">
+
+        <TextView
+            style="@style/ObjectDetailsValue"
+            android:background="#ffffffff"
+            android:text="@string/SelectActionExternalSource_Description" />
+
+        <ListView android:id="@android:id/list"
+            style="@style/ListViewStyle">
+
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>

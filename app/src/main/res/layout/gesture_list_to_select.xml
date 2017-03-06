@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout"
+    android:fitsSystemWindows="true"
+    android:id="@+id/GestureList_MainLayout"
+    tools:context="com.smid.app.GestureList">
+
+    <include layout="@layout/toolbar"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/ContentListLayout"
+        android:id="@+id/GestureList_ContentLayout">
+
+        <Button
+            style="@style/DefaultButton"
+            android:id="@+id/GestureList_NewGesture"
+            android:text="@string/GestureList_AddNewGesture"
+            android:onClick="onClick"/>
+
+
+        <ListView android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice"
+            android:drawSelectorOnTop="false">
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
